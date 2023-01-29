@@ -1,0 +1,25 @@
+.menu {
+    padding-top: 35px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: flex;
+        column-gap: 40px;
+        list-style-type: none;
+        align-items: center;
+        &-link {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #3F3F3F;
+            &:hover {
+                color: #F72D57;
+                text-decoration: none;
+            }
+        }
+    }
+}

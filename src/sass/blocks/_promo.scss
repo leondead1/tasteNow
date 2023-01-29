@@ -1,0 +1,38 @@
+.promo {
+    height: 700px;
+    color: #FFFFFF;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-top: 100px;
+        width: 520px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 72px;
+        align-items: center;
+        color: #3F3F3F;
+        span {
+            color: #F72D57;
+        }
+    }
+    &__descr {
+        margin-top: 24px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+
+        color: #3F3F3F;
+    }
+    &__img {
+        width: 650px;
+        height: 665px;
+
+
+    }
+}

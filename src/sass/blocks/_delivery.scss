@@ -1,0 +1,32 @@
+.delivery {
+    min-height: 580px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 100px;
+        div {
+            width: 585px;
+        }
+    }
+    &__title {
+        margin-top: 210px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        color: #3F3F3F;
+        span {
+           color: #F72D57;
+        }
+    }
+    &__descr {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3F3F3F;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,37 @@
+.food {
+    min-height: 540px;
+    &__wrapper {
+        position: relative;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: #F72D57;
+        margin-top: 70px;
+        height: 400px;
+        z-index: 1;
+    }
+    &__img {
+        margin-left: 100px;
+        position: relative;
+        z-index: 2;
+        width: 615px;
+        height: 540px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        color: #FFFFFF;
+        margin-right: 100px;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-right: 100px;
+    }
+}

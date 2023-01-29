@@ -1,0 +1,22 @@
+@import 'libs/bootstrap-reboot.min';
+
+*{
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/menu.scss';
+@import 'blocks/btns.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/food.scss';
+@import 'blocks/delivery.scss';
+@import 'blocks/work.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/categories.scss';
