@@ -19,7 +19,12 @@
                     <li class="menu__list-item"><a href="#" class="menu__list-link">About us</a></li>
                     <li class="menu__list-item"><a href="#" class="menu__list-link">Blog</a></li>
                     <li class="menu__list-item"><a href="#" class="menu__list-link">Contact us</a></li>
-                    <li class="menu__list-item"><a href="#" class="menu__list-cart"><img src="icons/ShoppingCart.svg" alt="cart"></a></li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-cart">
+                            <img src="icons/ShoppingCart.svg" alt="cart">
+                            <div class="menu__list-cart-counter"></div>
+                        </a>
+                    </li>
                     <li><button class="btn">Sign up</button></li>
                 </ul>
                 
@@ -122,6 +127,26 @@
             </div>
         </div>
     </footer>
+
+    <div class="cart">
+        <div class="cart__wrapper">
+            <div class="cart__content">
+                <h2 class="cart__title">Your order:</h2>
+                <div class="cart__order">
+
+                </div>
+                <div class="cart__total"></div>
+                <form action="#" >
+
+                    <input required placeholder="Your name" name="name" type="text" class="cart__input">
+                    <input required placeholder="Your phone" name="name" type="phone" class="cart__input">
+                    <button class="cart__btn btn">ORDER NOW</button>
+                </form>
+                
+                <button class="cart__close">x</button>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

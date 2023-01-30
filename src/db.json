@@ -3,21 +3,21 @@
       {
         "img": "img/categorie/mediPizz.png",
         "altimg": "med",
-        "title": "Pepperoni Pizza",
+        "title": "Pepperoni Pizza 1",
         "descr": "Di napoles",
         "price": 11.99
       },
       {
         "img": "img/categorie/mediPizz.png",
         "altimg": "med",
-        "title": "Pepperoni Pizza",
+        "title": "Pepperoni Pizza 2",
         "descr": "Di napoles",
         "price": 11.99
       },
       {
         "img": "img/categorie/mediPizz.png",
         "altimg": "med",
-        "title": "Pepperoni Pizza",
+        "title": "Pepperoni Pizza 3",
         "descr": "Di napoles",
         "price": 11.99
       },
@@ -117,14 +117,14 @@
       {
         "img": "img/categorie/pepperoni.png",
         "altimg": "med",
-        "title": "Supper Pepperoni",
+        "title": "Supper Pepperoni 1",
         "descr": "peppeHouse",
         "price": 12.99
       },
       {
         "img": "img/categorie/pepperoni.png",
         "altimg": "med",
-        "title": "Supper Pepperoni",
+        "title": "Supper Pepperoni 2",
         "descr": "peppeHouse",
         "price": 12.99
       },
@@ -247,14 +247,14 @@
       {
         "img": "img/categorie/vegePizza.png",
         "altimg": "med",
-        "title": "Combo",
+        "title": "Combo 1",
         "descr": "Combo",
         "price": 15.99
       },
       {
         "img": "img/categorie/vegePizza.png",
         "altimg": "med",
-        "title": "Combo",
+        "title": "Combo 2",
         "descr": "Combo",
         "price": 15.99
       },

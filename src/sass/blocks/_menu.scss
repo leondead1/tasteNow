@@ -21,5 +21,23 @@
                 text-decoration: none;
             }
         }
+        &-cart {
+            position: relative;
+            &-counter {
+                display: none;
+                padding-top: 1px;
+                position: absolute;
+                width: 23px;
+                height: 23px;
+                background: #F72D57;
+                border-radius: 100%;
+                left: 32px;
+                top: 20px;
+                font-weight: 700;
+                font-size: 15px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
     }
 }

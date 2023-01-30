@@ -1,7 +1,7 @@
 
 window.addEventListener('DOMContentLoaded', function() {
 
-    // карточки с едой
+    // cards
 
     class EatCard {
         constructor(src, alt, title, restor, prise, parentSelector) {
@@ -43,12 +43,41 @@ window.addEventListener('DOMContentLoaded', function() {
         });
 
     
+    // cardOrder
+    const cartOrder = [];
+    const cartPrice = [];
+    let orderCounter = 0,
+        totalPrice = 0;
+    
+    const cartButton = document.querySelector('.menu__list-cart'),
+          cartInner = document.querySelector('.cart__order'),
+          cart = document.querySelector('.cart'),
+          cartClose = document.querySelector('.cart__close'),
+          cartTotal = document.querySelector('.cart__total');
 
 
-   // slider
+    cartButton.addEventListener('click', function(){
+        cart.style.display = 'block';
+        cartOrder.forEach((elem, i) => {
+            const order = document.createElement('div');
+            order.classList.add('cart__order');
+            order.textContent = `${elem} = $${cartPrice[i]}`;
+            cartTotal.textContent = `total: $${totalPrice += +(cartPrice[i])}`;
+            cartInner.append(order);
+        });
+    });
 
-   function slider() {
-    const next = document.querySelector('.categories__slider-next'),
+    cartClose.addEventListener('click', function(){
+        cart.style.display = 'none';
+    });
+    
+
+    // slider
+
+   
+
+    function slider() {
+        const next = document.querySelector('.categories__slider-next'),
             prev = document.querySelector('.categories__slider-prev'),
             cardsWrapper = document.querySelector('.categories__cards'),
             cardsInner = document.querySelector('.categories__cards-inner'),
@@ -99,9 +128,6 @@ window.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            // const dot = document.createElement('div');
-            // dot.classList.add('categories__dot');
-            // dots.append(dot);
             const arrDots = [];
 
             for (let i = 0; i < cards.length/4; i++){
@@ -129,10 +155,35 @@ window.addEventListener('DOMContentLoaded', function() {
                 });
             });
 
-   }
+            // cart with order
+
+            
+
+            const food = document.querySelectorAll('.categories__card-btn'),
+                foodName = document.querySelectorAll('.categories__card-title'),
+                orderCount = document.querySelector('.menu__list-cart-counter'),
+                foodPrice = document.querySelectorAll('.categories__card-price');
+
+            food.forEach((elem, i) => {
+                elem.addEventListener('click',  function(){
+                    let priceStr = foodPrice[i].textContent,
+                        priceNmbr = priceStr.slice(1);
+
+                    cartPrice.push(priceNmbr);
+                    cartOrder.push(foodName[i].textContent);
+                    orderCounter += 1;
+                    if (orderCounter > 0){
+                        orderCount.style.display = 'block';
+                        orderCount.textContent = `${orderCounter}`;
+                    }
+                    console.log(cartPrice);
+                });
+            });
+
+    }
 
 
-    //получаем кнопки и назанчаем обработчики 
+    //get buttons and assign handlers
 
     const pizza = document.querySelector("#pizza"),
             burger = document.querySelector('#burger'),
@@ -258,9 +309,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     });
 
-
-
-
+    
     
 });
 
